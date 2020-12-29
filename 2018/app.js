@@ -93,7 +93,7 @@ function race(candidates) {
       <span class="player">${p[1]} ${i + 1}</span>
     </div>`;
   }).join('');
-  console.log("safdasfdaszcxdv");
+  window.alert(5 + 6);
   const round1 = partRace(durations, 0.25);
   const round2 = partRace(durations, 0.33);
   const round3 = partRace(durations, 0.5);
