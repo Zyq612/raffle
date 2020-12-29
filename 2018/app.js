@@ -93,7 +93,6 @@ function race(candidates) {
       <span class="player">${p[1]} ${i + 1}</span>
     </div>`;
   }).join('');
-  <p id="demo">我的第一个段落。</p>
   const round1 = partRace(durations, 0.25);
   const round2 = partRace(durations, 0.33);
   const round3 = partRace(durations, 0.5);
