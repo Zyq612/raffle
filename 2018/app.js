@@ -52,8 +52,8 @@ startBtn.addEventListener('click', async () => {
   const candidates = members.slice(-6).reverse();
 
   // 将中奖结果保存到localStorage中
-  addResults(candidates.slice(0, 6));
-  members.length -= 6;
+  addResults(candidates.slice(0, 3));
+  members.length -= 3;
 
   await race(candidates);
 
@@ -93,6 +93,7 @@ function race(candidates) {
       <span class="player">${p[1]} ${i + 1}</span>
     </div>`;
   }).join('');
+
   const round1 = partRace(durations, 0.25);
   const round2 = partRace(durations, 0.33);
   const round3 = partRace(durations, 0.5);
