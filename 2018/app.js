@@ -52,8 +52,8 @@ startBtn.addEventListener('click', async () => {
   const candidates = members.slice(-6).reverse();
 
   // 将中奖结果保存到localStorage中
-  addResults(candidates.slice(0, 3));
-  members.length -= 3;
+  addResults(candidates.slice(0, 6));
+  members.length -= 6;
 
   await race(candidates);
 
